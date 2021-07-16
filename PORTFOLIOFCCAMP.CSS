@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+
+* {
+  font-family: "Mukta", sans-serif;
+}
+
+body {
+  color: #00cecb;
+  background: linear-gradient(90deg, #d8d8d8, #ffffea);
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background: linear-gradient(90deg, #d8d8d8, #ffffea);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-page {
+  padding: 0;
+  list-style: none;
+  color: #4c4c4c;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-page a {
+  text-decoration: none;
+  color: #4c4c4c;
+  margin-right: 1em;
+}
+
+#nav-page a:hover {
+  text-decoration: underline;
+  color: #00cecb;
+}
+
+#nav-social {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+#nav-social a {
+  margin-left: 1em;
+}
+
+#welcome-section {
+  height: 100vh;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#skills {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills-list {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-tile img {
+  width: 8em;
+  height: 8em;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects a {
+  text-decoration: none;
+  color: #4c4c4c;
+  font-weight: bold;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 5em;
+  text-shadow: 2px 0px 5px black;
+}
+
+h2 {
+  font-size: 3em;
+  text-shadow: 2px 2px 3px #4c4c4c;
+}
+
+.fab {
+  color: #4c4c4c;
+}
+.fab:visited {
+  color: inherit;
+}
+
+.fab:hover {
+  color: #00cecb;
+}
+
+#nav-footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-footer li {
+  margin: 0 1em 0 1em;
+}
+
+@media (max-width: 600px) {
+  #skills-list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #projects {
+    margin-top: 5em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile img {
+    width: 5em;
+    height: 5em;
+  }
+
+  #nav-page {
+    display: none;
+  }
+}
